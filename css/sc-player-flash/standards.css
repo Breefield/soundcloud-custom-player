@@ -1,6 +1,6 @@
 body {
   font-family: 'Courier', Courier New, monospace;
-  width: 800px;
+  width: 1020px;
   margin-left: 50px;
   color: #333;
 }
@@ -11,7 +11,7 @@ h1 {
 }
 
 .post {
-width: 540px;
+width: 670pxpx;
 float: left;
 }
 

@@ -13,10 +13,8 @@
 
 /* Artworks */
 
-.sc-player .sc-artwork-list{
-  background: #eee;
-  background: -moz-linear-gradient(left bottom, #EEEEEE 20px, #333333 350px) repeat scroll 0 0 transparent;
-  background: -webkit-gradient(linear, right top, left bottom, from(#333), to(#eee));
+.sc-player .sc-artwork-list {
+  background: #FFF url('../../css/sc-player-flash/img/loading_large.gif') no-repeat 105px 100px;
 }
 
 /* scrubber */
@@ -177,7 +175,8 @@
   color: #fff;
 }
 
-.sc-player .sc-info-close {
+.sc-player a.sc-info-close {
+  text-decoration: none;
   background: #CCC;
   color: #333;
   -moz-border-radius: 4px;
