@@ -1,7 +1,7 @@
 
 .sc-player {
-  width: 540px;
-  height: 270px;
+  width: 660px;
+  height: 230px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -15,8 +15,8 @@
 /* Artworks */
 
 .sc-player .sc-artwork-list{
-  width: 50%;
-  height: 100%;
+  width: 230px;
+  height: 230px;
   background-color: #transparent;
   list-style-type: none;
   position: relative;
@@ -44,14 +44,16 @@
 
 /* controls */
 
-.sc-player .sc-controls{
+.sc-player .sc-controls {
+  background: #E8E8E8;
   position: absolute;
   width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  margin-top: -25px;
-  top: 50%;
-  left: 25%;
+  height: 63px;
+  /*margin-left: 8px;
+  margin-top: 8px;*/
+  padding: 8px;
+  top: 0px;
+  left: 230px;
 }
 
 .sc-player .sc-controls a{
@@ -77,29 +79,34 @@
 /* scrubber */
 
 .sc-scrubber {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
   position: absolute;
-  left: 10px;
-  bottom: 10px;
-  height: 40px;
-  width: 250px;
-  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.30);
-  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.30);
-  display: none;
+  right: 15px;
+  top: 0px;
+  height: 80px;
+  width: 347px;
+  /*display: none;*/
+}
+
+.sc-scrubber .sc-time-span img {
+  height: 64px;
+  width: 100%;
 }
 
 .sc-player:hover .sc-scrubber {
-  display: block;
-  left: 10px;
+  /*display: block;*/
+  /*left: 10px;*/
 }
 
 .sc-scrubber .sc-time-span{
-  height: 30px;
-  margin: 5px;
+  height: 64px;
+  /* margin: 5px; */
   position: relative;
 }
 
 .sc-scrubber .sc-buffer, .sc-scrubber .sc-played{
-  height: 30px;
+  height: 64px;
   position: absolute;
   top: 0;
 }
@@ -111,9 +118,11 @@
   margin-left: 5px;
 }
 .sc-scrubber .sc-time-indicators{
+  font-size: 9px;
   position: absolute;
-  right: 0;
-  top: -30px;
+  left: -55px;
+  text-align: center;
+  /* top: 0px; */
 }
 
 /* tracks */
@@ -123,17 +132,16 @@
 .sc-player ol.sc-trackslist {
   position: absolute;
   float: left;
-  width: 50%;
-  height: 260px;
-  top: 5px;
-  left: 50%;
+  width: 430px;
+  height: 140px;
+  top: 80px;
+  left: 230px;
   overflow: auto;
 }
 
 .sc-player ol.sc-trackslist li{
   cursor: pointer;
-  margin: 1px 5px;
-  padding: 3px 30px 3px 5px;
+  padding: 3px 30px 3px 8px;
   position: relative;
 }
 
@@ -145,27 +153,29 @@
 
 /* Track info*/
 
-.sc-player .sc-info{
+.sc-player .sc-info {
   position: absolute;
-  top: 10px;
-  left: -5000px;
-  width : 400px;
+  right: -5000px;
+  width : 353px;
   padding: 5px;
-  height: 200px;
-  z-index: 500;
-  margin-left: -200px;
+  height: 54px;
+  z-index: 1000;
+  overflow: auto;
 }
 
 .sc-player .sc-info.active{
-  left: 50%;
-  top: 12%;
+  right: 0px;
+  top: 0px;
 }
 
 
 .sc-player .sc-info-toggle{
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0px;
+  right: 0px;
+  width: 15px;
+  padding: 0px;
+  border-bottom: 1px solid #CCC;
 }
 
 .sc-player .sc-info-toggle.active{
@@ -179,6 +189,9 @@
 }
 
 /* volume control */
+
+.sc-volume-slider { display: none; }
+
 .sc-volume-slider {
   top: -25px;
   left: 0px;
