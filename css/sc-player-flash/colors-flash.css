@@ -154,10 +154,11 @@
 
 /* Track info*/
 
-.sc-player .sc-info{
+.sc-player .sc-info {
   background: #E8E8E8;
   color: #333;
   border-left: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
 }
 
 .sc-player .sc-info a {
@@ -176,10 +177,16 @@
   color: #fff;
 }
 
-.sc-player .sc-info-close{
-  background: #0063DC;
+.sc-player .sc-info-close {
+  background: #CCC;
+  color: #333;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   padding: 2px 4px;
   font-weight: bold;
+}
+
+.sc-player .sc-info-close:hover {
+  background: #AAA;
+  color: #333;
 }
