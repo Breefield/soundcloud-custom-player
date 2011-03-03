@@ -20,7 +20,14 @@
 /* scrubber */
 
 .sc-scrubber {
-  background-color: #B9B9B9;
+  background: #B9B9B9 url('../../css/sc-player-flash/img/sc-logo.jpg') no-repeat bottom right;
+}
+
+.hm-link {
+  background: #B9B9B9 url('../../css/sc-player-flash/img/hm-logo.jpg') no-repeat top left;
+  width: 134px;
+  height: 16px;
+  display: block;
 }
 
 

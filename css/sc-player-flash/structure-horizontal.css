@@ -3,7 +3,6 @@
   width: 660px;
   height: 230px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .sc-player ol, .sc-player li{
@@ -82,10 +81,12 @@
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
   position: absolute;
-  right: 15px;
+  /* right: 15px; */
+  right: 0px;
   top: 0px;
   height: 80px;
-  width: 347px;
+  /*  width: 347px; */
+  width: 362px;
   /*display: none;*/
 }
 
@@ -155,7 +156,8 @@
 
 .sc-player .sc-info {
   position: absolute;
-  right: -5000px;
+  display: none;
+  right: 0px;
   width : 353px;
   padding: 5px;
   height: 69px;
@@ -181,6 +183,7 @@
 
 .sc-player .sc-info.active{
   right: 0px;
+  display: block;
   top: 0px;
 }
 
@@ -192,6 +195,7 @@
   width: 15px;
   padding: 0px;
   border-bottom: 1px solid #CCC;
+  display: none;
 }
 
 .sc-player .sc-info-toggle.active{
@@ -237,5 +241,3 @@
   top: 2px;
   left: 2px;
 }
-
-

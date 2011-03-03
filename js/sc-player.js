@@ -483,7 +483,11 @@
               .append('<div class="sc-volume-slider"><span class="sc-volume-status" style="width:' + soundVolume +'%"></span></div>')
               .append('<div class="sc-time-span"><div class="sc-waveform-container"></div><div class="sc-buffer"></div><div class="sc-played"></div></div>')
               .append('<div class="sc-time-indicators"><span class="sc-position"></span> | <span class="sc-duration"></span></div>');
-
+              
+        if(opts.hmLink != '') {
+          $player.find('.sc-scrubber').append('<a class="hm-link" href="' + opts.hmLink + '" target="_blank"></a>');
+        }
+  
         // load and parse the track data from SoundCloud API
         loadTracksData($player, links, opts.apiKey);
         // init the player GUI, when the tracks data was laoded

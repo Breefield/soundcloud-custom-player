@@ -1,0 +1,13 @@
+@import url("sc-player-flash/structure-horizontal.css"); /* switch here between 'horizontal' and 'vertical' structure */
+@import url("sc-player-flash/colors-flash.css"); /* switch here between 'blue', 'orange' and 'green' color-shemes */
+body { margin: 0px; padding: 0px; }
+
+.preorder {
+  color: #0063DC;
+  font: 800 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  display: block;
+  width: 230px;
+  text-align: center;
+}
+
+.preorder:hover { text-decoration: none; }
